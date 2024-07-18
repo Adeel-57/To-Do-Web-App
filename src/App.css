@@ -141,3 +141,10 @@
 .icon-rotate{
   transform: rotateX(180deg);
 }
+
+
+@media screen and (max-width: 600px) {
+  .owner{
+    margin-bottom: 50px;
+  }
+}
