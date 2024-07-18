@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  width: 100%;
+  padding: 10px;
+}
+.App-container{
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:  0 0 20px 0 rgba(0, 0, 0, 0.09);
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app-content{
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.form{
+  width: 100%;
+  box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.09);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form div{
+  width: 100%;
+  position: relative;
+}
+.form input{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.09);
+}
+.form p{
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  margin-top: 2px;
+}
+.form button{
+  padding: 5px 20px 3px 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: none;
+}
+.to-do-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.to-do-list li {
+  width: 100%;
+  list-style: none;
+  box-shadow:  0 0 5px 0 rgba(0, 0, 0, 0.09);
+}
+.li-content{
+  padding: 10px;
+}
+.li-head{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.circle{
+  height: 10px;
+  width: 10px;
+  margin-top: 3px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.circle-content{
+  opacity: 0;
+}
+.circle1{
+  border: 1px solid green;
+}
+.head-content{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.head-title{
+  margin-right: 5px;
+}
+.head-icons{
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.head-icons img{
+  height: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.li-content p{
+  margin-top: 5px;
+  margin-left: 19px;
+  transition: all 0.3s ease-in-out;
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  color: rgb(213, 213, 213);
+}
+.icon-rotate{
+  transform: rotateX(180deg);
+}
