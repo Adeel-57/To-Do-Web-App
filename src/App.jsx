@@ -29,7 +29,7 @@ function App() {
         MarkDone(item)
       }
     })
-    if(founnd){setdata(pre => [...pre])}
+    if (founnd) { setdata(pre => [...pre]) }
   }
   function MarkDone(item) {
     let founnd = false;
@@ -70,12 +70,12 @@ function App() {
                         <h5 className='head-title'>{item.title}</h5>
                         <div className='head-icons'>
                           <img className={item.id === show ? 'icon-rotate' : ''} style={{ cursor: 'pointer' }} src={downArrow} alt="" onClick={(e) => { showIcon(e, item) }} />
-                          <img src={delete_icon} style={{ cursor: 'pointer' }} onClick={(e) => { deleteIcon(e, item) }}/>
+                          <img src={delete_icon} style={{ cursor: 'pointer' }} onClick={(e) => { deleteIcon(e, item) }} />
                         </div>
                       </div>
                     </div>
                     {
-                      item.id === show ? item.details.trim() ?<p>{item.details}</p>:<p className='empty'>empty</p>  : ''
+                      item.id === show ? item.details.trim() ? <p>{item.details}</p> : <p className='empty'>empty</p> : ''
                     }
                   </div>
                 </li>)
@@ -84,6 +84,7 @@ function App() {
           </div>
         </div>
       </div>
+      <p className='owner'>All rights reserved by M-Adeel</p>
     </>
   )
 }
