@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 #root{
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,6 +145,6 @@
 
 @media screen and (max-width: 600px) {
   .owner{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
